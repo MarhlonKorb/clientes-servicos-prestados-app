@@ -6,12 +6,17 @@ import { Cliente } from '../cliente';
   styleUrls: ['./clientes-form.component.css']
 })
 export class ClientesFormComponent implements OnInit {
+  cliente: Cliente;
 
-cliente : Cliente;
+  constructor() {
+    this.cliente = new Cliente();
+  }
 
-  constructor() { }
+  ngOnInit(): void {}
 
-  ngOnInit(): void {
+
+  onSubmit() {
+    console.log(this.cliente);
   }
 
 }
