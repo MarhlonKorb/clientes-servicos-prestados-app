@@ -3,13 +3,22 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-clientes-form',
   templateUrl: './clientes-form.component.html',
-  styleUrls: ['./clientes-form.component.css']
+  styleUrls: ['./clientes-form.component.css'],
 })
 export class ClientesFormComponent implements OnInit {
+  cliente: Cliente;
 
+<<<<<<< Updated upstream
   constructor() { }
-
-  ngOnInit(): void {
+=======
+  constructor() {
+    this.cliente = new Cliente();
   }
 
+  ngOnInit(): void {}
+>>>>>>> Stashed changes
+
+  onSubmit() {
+    console.log(this.cliente);
+  }
 }
