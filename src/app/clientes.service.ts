@@ -11,11 +11,18 @@ export class ClientesService {
    *  o módulo importado do service dentro do construtor da classe */
   constructor(private http: HttpClient) {}
 
-salvar(cliente : Cliente) : Observable<Cliente>{
-  return this.http.post<Cliente>('http://localhost:8080/api/clientes', cliente);
-}
+  public salvar(cliente: Cliente): Observable<Cliente> {
+    return this.http.post<Cliente>(
+      'http://localhost:8080/api/clientes',
+      cliente
+    );
+  }
 
-/*Conceito de instanciação e retorno de objetos para o front
+  public getClientes(): Observable<Cliente[]> {
+    return this.http.get<Cliente[]>('http://localhost:8080/api/clientes');
+  }
+
+  /*Conceito de instanciação e retorno de objetos para o front
   getCliente(): Cliente {
     let cliente: Cliente = new Cliente();
     cliente.nome = 'Teste';
