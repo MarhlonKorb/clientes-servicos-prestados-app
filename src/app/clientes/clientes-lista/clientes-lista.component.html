@@ -5,7 +5,7 @@
 <div class="container">
   <div class="row">
     <div class="class col-md-2">
-      <button class="btn btn-success"><i class="fa fa-plus"></i> Novo</button>
+      <button class="btn btn-success" (click)="novoCadastro()"><i class="fa fa-plus"></i> Novo</button>
     </div>
   </div>
 <br />
@@ -27,7 +27,11 @@
                 <td>{{cliente.nome}}</td>
                 <td>{{cliente.cpf}}</td>
                 <td>{{cliente.dataCadastro}}</td>
-                <td></td>
+                <td>
+                <button class="btn btn-primary" routerLink="/clientes-form/{{cliente.id}}">
+                  <i class="fa fa-edit" ></i>
+                </button>
+              </td>
             </tr>
         </tbody>
       </table>
