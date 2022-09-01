@@ -18,15 +18,18 @@ export class ClientesService {
     );
   }
 
+  public atualizar(cliente: Cliente): Observable<any> {
+    return this.http.put<Cliente>(
+     `http://localhost:8080/api/clientes/${cliente.id}`,
+      cliente
+    );
+  }
+
   public getClientes(): Observable<Cliente[]> {
     return this.http.get<Cliente[]>('http://localhost:8080/api/clientes');
   }
 
-  /*Conceito de instanciação e retorno de objetos para o front
-  getCliente(): Cliente {
-    let cliente: Cliente = new Cliente();
-    cliente.nome = 'Teste';
-    cliente.cpf = '03187153097';
-    return cliente;
-  }*/
+  public getClienteById(id: number): Observable<Cliente>{
+   return this.http.get<any>(`http://localhost:8080/api/clientes/${id}`);
+  }
 }
