@@ -1,3 +1,4 @@
+import { ServicoPrestadoModule } from './servico-prestado/servico-prestado.module';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
@@ -21,7 +22,7 @@ import {FormsModule, ReactiveFormsModule} from '@angular/forms';
     TemplateModule,
     ClientesModule,
     HttpClientModule,
-    
+    ServicoPrestadoModule
   ],
   exports: [
     FormsModule,
