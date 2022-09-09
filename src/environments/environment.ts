@@ -2,8 +2,14 @@
 // `ng build --prod` replaces `environment.ts` with `environment.prod.ts`.
 // The list of file replacements can be found in `angular.json`.
 
+/**
+ * Classe responsável por centralizar o endereço da URL do backend em formato
+ * de constante
+ */
+
 export const environment = {
-  production: false
+  production: false,
+  apiURLBase: 'http://localhost:8080'
 };
 
 /*

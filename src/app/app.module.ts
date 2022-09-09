@@ -10,6 +10,7 @@ import { ClientesModule } from './clientes/clientes.module';
 import { ClientesService } from './clientes.service';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
+import { ServicoPrestadoService } from './servico-prestado.service';
 
 @NgModule({
   declarations: [AppComponent, HomeComponent],
@@ -29,7 +30,7 @@ import {FormsModule, ReactiveFormsModule} from '@angular/forms';
     ReactiveFormsModule,
     BrowserAnimationsModule,
   ],
-  providers: [ClientesService],
+  providers: [ClientesService, ServicoPrestadoService],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
