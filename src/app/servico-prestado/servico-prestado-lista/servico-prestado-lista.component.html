@@ -33,7 +33,11 @@
           <i class="fa fa-search"></i> Consultar
         </button>
 
-        <button type="button" class="btn btn-warning ml-1" routerLink="/servico-prestado-form">
+        <button
+          type="button"
+          class="btn btn-warning ml-1"
+          routerLink="/servico-prestado-form"
+        >
           <i class="fa fa-plus"></i> Novo
         </button>
       </div>
@@ -57,10 +61,10 @@
         </thead>
         <tbody>
           <tr *ngFor="let s of servicoPrestadoBusca">
-<td>{{s.cliente.nome}}</td>
-<td>{{s.descricao}}</td>
-<td>{{s.valor}}</td>
-<td>{{s.data}}</td>
+            <td>{{ s.cliente.nome }}</td>
+            <td>{{ s.descricao }}</td>
+            <td>{{ s.valor }}</td>
+            <td>{{ s.data }}</td>
           </tr>
         </tbody>
       </table>
