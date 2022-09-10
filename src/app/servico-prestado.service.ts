@@ -19,10 +19,12 @@ apiURL: string = environment.apiURLBase + '/api/servicos-prestados';
   }
 
   buscar(nome: string, mes: number) : Observable<ServicoPrestadoBusca[]>{
+   // Método responsável por setar os valores vindos do formulário
+   // para dentro da requisição que vai para o backend
     const httpParams = new HttpParams().
     set("nome", nome).
     set("mes",mes ? mes.toString() : '');
-    
+
     const url = this.apiURL + "?" + httpParams.toString();
     return this.http.get<any>(url);
   }
