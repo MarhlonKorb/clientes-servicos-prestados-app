@@ -13,7 +13,7 @@ import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { ServicoPrestadoService } from './servico-prestado.service';
 
 @NgModule({
-  declarations: [AppComponent, HomeComponent],
+  declarations: [AppComponent, HomeComponent, ],
   imports: [
     BrowserModule,
     FormsModule,
