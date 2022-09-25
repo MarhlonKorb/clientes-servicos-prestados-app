@@ -11,9 +11,11 @@ import { ClientesService } from './clientes.service';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { ServicoPrestadoService } from './servico-prestado.service';
+import { LoginComponent } from './login/login.component';
+import { LayoutComponent } from './layout/layout.component';
 
 @NgModule({
-  declarations: [AppComponent, HomeComponent, ],
+  declarations: [AppComponent, HomeComponent, LoginComponent, LayoutComponent, ],
   imports: [
     BrowserModule,
     FormsModule,
