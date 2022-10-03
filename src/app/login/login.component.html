@@ -1,3 +1,5 @@
+<div class="bg-primary">
+
 <div id="layoutAuthentication">
   <div id="layoutAuthentication_content">
     <main>
@@ -9,8 +11,13 @@
                 <h3 class="text-center font-weight-light my-4">{{cadastrando ? ' Cadastro de novo usuário' : 'Entrar'}}</h3>
               </div>
               <div class="card-body">
-                <div class="alert alert-danger" *ngIf="loginError">
-                  Login e/ou senha incorreto(a).
+
+                <div class="alert alert-success" *ngIf="mensagemSucesso">
+                 {{ mensagemSucesso }}
+                </div>
+
+                <div class="alert alert-danger" *ngFor="let erro of errors">
+                  {{ erro }}
                 </div>
 
                 <form #loginForm="ngForm" (submit)="onSubmit()">
@@ -19,7 +26,7 @@
                     <input
                       type="text"
                       name="username"
-                      [(ngModel)]="username"
+                      [(ngModel)]="username" autocomplete="off"
                       class="form-control py-4"
                       placeholder="Digite seu login"
                     />
@@ -37,10 +44,10 @@
                       <button type="submit" class="btn btn-primary" *ngIf="!cadastrando">
                         Enviar
                       </button>
-                      <button type="button" class="btn btn-success" *ngIf="cadastrando">
+                      <button type="button" class="btn btn-success" *ngIf="cadastrando" (click)="cadastrarUsuario()">
                         Cadastrar
                       </button>
-                      <button type="button" class="btn btn-danger ml-1" *ngIf="cadastrando" (click)="cancelaCadastro()">
+                      <button type="button" class="btn btn-danger ml-1" *ngIf="cadastrando" (click)="cancelarCadastro()">
                         Cancelar
                       </button>
                     </div>
@@ -51,7 +58,7 @@
               <div class="card-footer text-center">
                 <div class="small">
                   <a href="#" (click)="preparaCadastrar($event)">
-                    Não possui uma conta ainda? Cadastre-se
+                    Não possui uma conta ainda? Cadastre-se!
                   </a>
                 </div>
               </div>
@@ -61,4 +68,5 @@
       </div>
     </main>
   </div>
+</div>
 </div>

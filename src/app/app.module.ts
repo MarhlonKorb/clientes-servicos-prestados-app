@@ -13,6 +13,7 @@ import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { ServicoPrestadoService } from './servico-prestado.service';
 import { LoginComponent } from './login/login.component';
 import { LayoutComponent } from './layout/layout.component';
+import { AuthService } from './auth.service';
 
 @NgModule({
   declarations: [AppComponent, HomeComponent, LoginComponent, LayoutComponent, ],
@@ -32,7 +33,7 @@ import { LayoutComponent } from './layout/layout.component';
     ReactiveFormsModule,
     BrowserAnimationsModule,
   ],
-  providers: [ClientesService, ServicoPrestadoService],
+  providers: [ClientesService, ServicoPrestadoService, AuthService],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
