@@ -8,36 +8,29 @@ import { environment } from '../environments/environment';
   providedIn: 'root',
 })
 export class ClientesService {
+  apiURL: string = environment.apiURLBase + '/api/clientes';
 
-apiURL: string = environment.apiURLBase + '/api/clientes';
-
-  /**Injetar uma dependência na classe basta inserir
+  /** Injetar uma dependência na classe basta inserir
    *  o módulo importado do service dentro do construtor da classe */
   constructor(private http: HttpClient) {}
 
   public salvar(cliente: Cliente): Observable<Cliente> {
-    return this.http.post<Cliente>(
-      `${this.apiURL}`,
-      cliente
-    );
+    return this.http.post<Cliente>(`${this.apiURL}`, cliente);
   }
 
   public atualizar(cliente: Cliente): Observable<any> {
-    return this.http.put<Cliente>(
-     `${this.apiURL}/${cliente.id}`,
-      cliente
-    );
+    return this.http.put<Cliente>(`${this.apiURL}/${cliente.id}`, cliente);
   }
 
   public getClientes(): Observable<Cliente[]> {
     return this.http.get<Cliente[]>(this.apiURL);
   }
 
-  public getClienteById(id: number): Observable<Cliente>{
-   return this.http.get<any>(`${this.apiURL}/${id}`);
+  public getClienteById(id: number): Observable<Cliente> {
+    return this.http.get<any>(`${this.apiURL}/${id}`);
   }
 
-  public excluirCliente(cliente: Cliente): Observable<any>{
+  public excluirCliente(cliente: Cliente): Observable<any> {
     return this.http.delete<any>(`${this.apiURL}/${cliente.id}`);
   }
 }
