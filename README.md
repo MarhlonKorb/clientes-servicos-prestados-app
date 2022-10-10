@@ -23,26 +23,13 @@ Projeto Fullstack onde o usuário pode realizar um cadastro de usuário para ace
      <a href="https://www.npmjs.com/" target="_blank"><img src="https://img.shields.io/badge/npm-FF0000?style=for-the-badge&logo=npm&logoColor=white" ></a>
 </div>
 
+
 <h2><br>Objetivos</h2>
 
 - Criar uma API de cadastro de clientes e serviços prestados para clientes utilizando Spring;
 - Aprender a utilizar as ferramentas de autenticação de usuário do Spring Security;
 - Criar uma interface gráfica para interação do usuário com o backend;
 - Ampliar meus conhecimentos em Spring Boot e Angular.
-
-<h2><br>Versões das libs utilizadas no Angular</h2>
-
-```
-@angular-devkit/build-angular   12.2.18
-@angular-devkit/core            12.2.18
-@angular-devkit/schematics      12.2.18
-@angular/cdk                    14.2.1
-@angular/cli                    12.2.18
-@angular/material               12.2.13
-@schematics/angular             12.2.18
-rxjs                            6.5.5
-typescript                      4.3.5
-```
 
 <h2><br>Dependências utilizadas no Spring Boot</h2>
 
@@ -125,6 +112,19 @@ typescript                      4.3.5
             <version>1.1.0.RELEASE</version>
         </dependency>
     </dependencies>
+```
+<h2><br>Versões das libs utilizadas no Angular</h2>
+
+```
+@angular-devkit/build-angular   12.2.18
+@angular-devkit/core            12.2.18
+@angular-devkit/schematics      12.2.18
+@angular/cdk                    14.2.1
+@angular/cli                    12.2.18
+@angular/material               12.2.13
+@schematics/angular             12.2.18
+rxjs                            6.5.5
+typescript                      4.3.5
 ```
 
 <h2><br>Configurando e rodando o projeto</h2>
