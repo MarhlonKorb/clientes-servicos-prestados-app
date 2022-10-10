@@ -10,13 +10,13 @@ Projeto Fullstack onde o usuário pode realizar um cadastro de usuário para ace
      <a href="https://www.java.com/pt-BR/">
          <img height="30" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-plain.svg"></a>
      <a href="https://spring.io/" >
-     <img height="30" width="40" href="https://spring.io/" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/spring/spring-plain.svg" target="_blank">
+     <img height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/spring/spring-plain.svg" target="_blank">
          <a href="https://nodejs.org/en/">
-     <img height="30" width="40" href="https://nodejs.org/en/" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-plain.svg" target="_blank">
+     <img height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-plain.svg" target="_blank">
              <a href="https://angular.io/" >
-                 <img height="30" width="40" href="https://angular.io/"  src="https://raw.githubusercontent.com/devicons/devicon/master/icons/angularjs/angularjs-plain.svg" target="_blank"></a>
+                 <img height="30" width="40"  src="https://raw.githubusercontent.com/devicons/devicon/master/icons/angularjs/angularjs-plain.svg" target="_blank"></a>
      <a href="https://www.typescriptlang.org/">
-         <img height="30" width="40" href="https://www.typescriptlang.org/"  src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-plain.svg"> </a>
+         <img height="30" width="40"   src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-plain.svg"> </a>
      <img height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg" target="_blank">
      <img height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg" target="_blank">
          <img height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg" target="_blank">
